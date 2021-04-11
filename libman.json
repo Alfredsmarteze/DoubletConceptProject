@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "font-awesome@5.15.1",
+      "destination": "wwwroot/lib/font-awesome/"
+    },
+    {
+      "library": "bootstrap-checkbox@2.0.0",
+      "destination": "wwwroot/lib/bootstrap-checkbox/"
+    },
+    {
+      "library": "jquery@3.5.1",
+      "destination": "wwwroot/lib/jquery/"
+    }
+  ]
+}

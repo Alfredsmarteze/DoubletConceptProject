@@ -1,0 +1,132 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+ 
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/*Key Frame Animation*/
+@keyframes ballmove{
+
+    0% {
+        left: 0px;
+        top: 0px;
+        color: red;
+        background-color: greenyellow;
+    }
+
+    33% {
+        left: 20px;
+        top:100px;
+        background-color: blue;
+        color:white;
+        transform:scaleY(1.9);
+    }
+
+    66% {
+        left: 40px;
+        top:120px;
+        background-color: salmon;
+        transform:rotate3d(1,0,0,60deg)
+    }
+
+    100% {
+        left: 70px;
+        top: 130px;
+        background-color: firebrick;
+        color: white;
+        /*transform: skewY(60deg);*/
+    }
+
+}
+
+div #ball.animate{
+    animation-name: ballmove;
+    animation-duration: 20s;
+    animation-delay: 1s;
+    animation-timing-function:ease-in ease-in-out;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    
+}
+/*html{
+    height:100%;
+}*/
+/*div.bg{
+    background-image:url(../Image/fruit4.jpeg);
+    height:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}*/
+
+/*img.container-flui{
+    width:100%;
+    height:auto;
+}*/

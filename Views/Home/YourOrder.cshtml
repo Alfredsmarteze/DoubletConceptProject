@@ -1,0 +1,82 @@
+﻿@model DoubletConceptProject.Models.YourMessage
+
+<h4 class="display-4 text-center text-white ">Place Your Order</h4>
+
+<div class="row w-100 bg-white ml-2">
+    <div class="col-md-4 w-100 ">
+        <form asp-action="YourOrder">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" type="email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div>
+                @*<div class="form-group">
+                <label asp-for="OurService" class="control-label"></label>
+                <input asp-for="OurService" type="checkbox" value="fruit1" class="form-control" />
+                <span asp-validation-for="OurService" class="text-danger"></span>
+                <label asp-for="OurService" class="control-label"></label>
+                <input asp-for="OurService" type="checkbox" value="fruit2" class="form-control" />
+                <span asp-validation-for="OurService" class="text-danger"></span>
+                <label asp-for="OurService" class="control-label"></label>
+                <input asp-for="OurService" type="checkbox" value="fruit3" class="form-control" />
+                <span asp-validation-for="OurService" class="text-danger"></span>
+                <label asp-for="OurService" class="control-label"></label>
+                <input asp-for="OurService" type="checkbox" value="fruit4" class="form-control" />
+                <span asp-validation-for="OurService" class="text-danger"></span>
+            </div>*@
+
+                @*<div class="form-group">
+                <label asp-for="OurService" class="custom-control"></label>
+                <select asp-for="OurService" class="form-control custom-checkbox" id="checkdropdown">
+                    <option value="Fruit">Fruit Artistry</option>
+                    <option value="Event Planner">Event Planner</option>
+                    <option value="Children Party">Children Party</option>
+                    <option value="Fashion">Fashion</option>
+                </select>
+            </div>*@
+            </div>
+            <h5>Below are our listed services, kindly write to us in which aspect of our services we are to serve you.</h5>
+            <ul>
+                <li class="list-group-item">Fashion</li>
+                <li class="list-group-item">Wedding and Event Planning</li>
+                <li class="list-group-item">Fruit Artistry</li>
+                <li class="list-group-item">Children Party Items</li>
+            </ul><br>
+            <div class="form-group">
+                <label asp-for="Message" class="control-label"></label>
+                <textarea asp-for="Message" class="form-control"></textarea>
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" type="date" class="form-control" />
+                @*<span asp-validation-for="Date" class="text-danger"></span>*@
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Send" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@*<div>
+    <a asp-action="Index">Back to List</a>
+</div>*@
+
